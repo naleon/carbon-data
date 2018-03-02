@@ -1046,7 +1046,7 @@ public class QueryFactory {
 			if (el.getQName().equals(elQName) && isElementGroup(el)) {
                 elGroup.addOutputElementGroupEntry(createOutputElementGroup(dataService, el,
                         namespace, parentResult, ++level, targetOptionalOverride, isCaseSensitive));
-			} else if (el.getQName().equals(elQName) ) {
+			} else if (el.getQName().equals(elQName)) {
 				elGroup.addElementEntry(createStaticOutputElement(dataService, el, namespace,
                         resultType, targetOptionalOverride, isCaseSensitive));
 			} else if (el.getQName().equals(attrQName)) {
@@ -1306,9 +1306,6 @@ public class QueryFactory {
 				originalParam, paramType, elementType, namespace, 
 				xsdType, requiredRoles, dataCategory, resultType, export, exportType, arrayName,printOnce);
 		soel.setOptionalOverride(optionalOverride);
-		
-		
-		
 		return soel;
 	}
 	
