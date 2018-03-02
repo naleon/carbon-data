@@ -1297,7 +1297,7 @@ public class QueryFactory {
 		
 		optionalOverride |= optional;
 		String printOnceStr = el.getAttributeValue(new QName("printOnce"));
-		boolean printOnce = false;
+		boolean printOnce = true;
 		if (printOnceStr != null) {
 			printOnce = Boolean.parseBoolean(printOnceStr);
 		}
